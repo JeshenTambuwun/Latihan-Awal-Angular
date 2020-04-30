@@ -7,117 +7,44 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
-  jumlahoperator=0;
-  angkapertama="";
-  angkakedua="";
-  operator="";
-  kali(){
-    if(this.jumlahoperator==0){
-      this.operator+='*'
-      this.jumlahoperator++;
-    }
-    else{
-      this.operator='';
-      this.jumlahoperator=0;
-    }
+
+   tambah(){
+    this.hasil
   }
   kurang(){
-    if(this.jumlahoperator==0){
-      this.operator+='-'
-      this.jumlahoperator++;
-    }
-    else{
-      this.operator='';
-      this.jumlahoperator=0;
-    }
+    this.hasil
   }
-  tambah(){
-    if(this.jumlahoperator==0){
-      this.operator+='+'
-      this.jumlahoperator++;
-    }
-    else{
-      this.operator='';
-      this.jumlahoperator=0;
-    }
+
+   kali(){
+    this.hasil
   }
-  hapus(){
-    this.operator='';
-    this.angkapertama='';
-    this.angkakedua='';
-    this.jumlahoperator=0;
-  }
+  
   satu(){
-    if(this.angkakedua==''&&this.operator==''){
-      this.angkapertama+='1';
-    } 
-    if(this.angkapertama!='' && this.operator!=''){
-      this.angkakedua+='1';
-    }
+    this.hasil
   }
   dua(){
-        if(this.angkakedua==''&&this.operator==''){
-      this.angkapertama+='2';
-    } 
-    if(this.angkapertama!='' && this.operator!=''){
-      this.angkakedua+='2';
-    }
+    this.hasil
   }
   tiga(){
-        if(this.angkakedua==''&&this.operator==''){
-      this.angkapertama+='3';
-    } 
-    if(this.angkapertama!='' && this.operator!=''){
-      this.angkakedua+='3';
-    }
+    this.hasil
   }
   empat(){
-    if(this.angkakedua==''&&this.operator==''){
-      this.angkapertama+='4';
-    } 
-    if(this.angkapertama!='' && this.operator!=''){
-      this.angkakedua+='4';
-    }
+    this.hasil
   }
   lima(){
-    if(this.angkakedua==''&&this.operator==''){
-      this.angkapertama+='5';
-    } 
-    if(this.angkapertama!='' && this.operator!=''){
-      this.angkakedua+='5';
-    }
+    this.hasil
   }
   enam(){
-    if(this.angkakedua==''&&this.operator==''){
-      this.angkapertama+='6';
-    } 
-    if(this.angkapertama!='' && this.operator!=''){
-      this.angkakedua+='6';
-    }
+    this.hasil
   }
   tujuh(){
-    if(this.angkakedua==''&&this.operator==''){
-      this.angkapertama+='7';
-    } 
-    if(this.angkapertama!='' && this.operator!=''){
-      this.angkakedua+='7';
-    }
+    this.hasil
   }
   delapan(){
-    if(this.angkakedua==''&&this.operator==''){
-      this.angkapertama+='8';
-    } 
-    if(this.angkapertama!='' && this.operator!=''){
-      this.angkakedua+='8';
-    }
+    this.hasil
   }
   sembilan(){
-    if(this.angkakedua==''&&this.operator==''){
-      this.angkapertama+='9';
-    } 
-    if(this.angkapertama!='' && this.operator!=''){
-      this.angkakedua+='9';
-    }
+    this.hasil
   }
 
 }
